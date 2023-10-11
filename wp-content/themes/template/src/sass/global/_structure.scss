@@ -1,0 +1,23 @@
+$content-size: var(--wp--style--global--content-size);
+$blockgap: var(--wp--style--block-gap);
+$padding-top: var(--wp--style--root--padding-top);
+$padding-right: var(--wp--style--root--padding-right);
+$padding-bottom: var(--wp--style--root--padding-bottom);
+$padding-left: var(--wp--style--root--padding-left);
+$padding-box: $padding-top $padding-right $padding-bottom $padding-left;
+
+:focus-visible {
+    --outline-size: max(2px, 0.15em);
+
+    outline: var(--outline-width, var(--outline-size))
+        var(--outline-style, solid) var(--outline-color, currentColor);
+    outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+:target {
+    scroll-padding-block-start: $blockgap;
+}
+
+:focus {
+    scroll-padding-block-end: 8vh;
+}

@@ -1,0 +1,43 @@
+# ignore everything in the root except the "wp-content" directory.
+wp-admin/
+wp-includes/
+!wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# "themes" directory
+wp-content/*
+!wp-content/themes/
+!wp-content/plugins/
+wp-content/plugins/*
+!wp-content/plugins/cooperfields-blocks
+
+# ignore specific themes
+wp-content/themes/twenty*/
+
+# ignore node dependency directories
+node_modules/
+package-lock.json
+dist/
+
+# ignore log files and scss map files
+*.log
+*.map
+
+# ignore root directory files
+license.txt
+wp-activate.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+wp-blog-header.php
+wp-config.php
+index.php
+wp-content/themes/index.php
